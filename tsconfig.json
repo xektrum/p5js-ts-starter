@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "module":"ESNext",
+    "noImplicitAny": true,
+    "outDir":"./build",
+    "preserveConstEnums": true,
+    "removeComments":false,
+    "rootDir": "./src",
+    "sourceMap": true,
+    "target":"ES6",
+    "moduleResolution": "node",
+    "lib": ["es6", "DOM"]
+  }
+}
