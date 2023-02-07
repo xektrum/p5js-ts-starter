@@ -4,7 +4,11 @@
   "description": "## Install",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc --watch",
+    "clean": "rm -rf ./build/* && cp ./src/index.html ./build/index.html && cp ./node_modules/p5/lib/p5.min.js ./build/p5.min.js",
+    "build-clean": "npm run clean && tsc --build ./tsconfig.json",
+    "build-serve": "npm run build-clean && serve"
   },
   "repository": {
     "type": "git",
